@@ -12,9 +12,9 @@
     <?php
     $nome = $_GET["nome"];
     $ano_nascimento = $_GET["ano_nascimento"];
-    $idade = 2024 - $ano_nascimento;
+    $idade = 2024 - $ano_nascimento; /*aqui era pra ter usado o função Date("Y") */
     
-    if ($idade >= 0 && $idade <= 11) {
+    if ($idade >= 0 && $idade <= 11) { /*apesar de ter rodado certo, mas esse código está codificado de modo errado. Verifique o modo correto no GitHub quando o professor disponibilizar. */
         $faixa_etaria = "Criança";} 
     elseif ($idade >= 12 && $idade <= 14) {
         $faixa_etaria = "Adolescente";} 
@@ -28,7 +28,7 @@
     echo "Olá, $nome! Sua idade é $idade e você é $faixa_etaria.";
     ?>
 
-    <h5>Tabela de verificação:<br/>
+    <h5>Tabela de verificação:<br/> <!--Gostei dessa informação no final-->
     Criança (0 a 11 anos)<br/>
     Adolescente (12 a 14 anos)<br/>
     Jovem (15 a 18 anos)<br/>
@@ -37,7 +37,7 @@
 
     <br/>
 
-    <a href="02.html">Voltar</a>
+    <a href="02.html">Voltar</a> <!-- Cadê a tag <button>?-->
 </div>    
 </body>
 </html>

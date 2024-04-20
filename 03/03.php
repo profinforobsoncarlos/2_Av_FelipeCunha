@@ -16,7 +16,7 @@
         $nota4 = $_GET["n4"];
         $resultado = number_format(($nota1 + $nota2 + $nota3 + $nota4) / 4, 2);
         
-        if ($resultado >= 7 && $resultado <= 10) {
+        if ($resultado >= 7 && $resultado <= 10) { /*apesar de ter rodado certo, mas esse código está codificado de modo errado. Verifique o modo correto no GitHub quando o professor disponibilizar. */
             echo  "Média das notas é igual a: $resultado. </br> Situação: aprovado.";
         } elseif ($resultado >= 5 && $resultado <= 6.99) {
             echo "Média das notas é igual a: $resultado. </br> Situação: de recuperação.";
@@ -27,7 +27,7 @@
     ?>
     <br/>
 
-    <a href="03.html">Voltar</a>
+    <a href="03.html">Voltar</a> <!-- Cadê a tag <button>?-->
 </div>    
 </body>
 </html>
